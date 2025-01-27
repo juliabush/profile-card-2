@@ -54,6 +54,9 @@
     display: grid;
     place-content: center;
     background-color: var(--clr-Darkcyan);
+    background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: -300px -600px, 1000px 200px;
   }
   main {
     background-color: white;
@@ -90,9 +93,12 @@
   }
   .name__age-main-row {
     display: flex;
-    align-items: center;
-    gap: 1rem;
+    gap: .5rem;
     justify-content: center;
+  }
+  .sub-title__age {
+    font-size: 1.5rem;
+    align-self: center;
   }
   .sub-caption__location {
     place-self: center;
@@ -115,6 +121,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+hr {
+    opacity: 0.6;
+}
+.stats-flex__mini-column p {
+    font-size: 0.8rem;
+}
+h1, h2, h3, h4 {
+    color: var(--clr-Verydarkdesaturatedblue);
+    font-weight: var(--fw-bold);
+}
+p {
+    color: var(--clr-Darkgrayishblue);
+    font-weight: var(--fw-light);
 }
 @media (min-width:360px) and (max-width:400px) {
     .victor__avatar {
